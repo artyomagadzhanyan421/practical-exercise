@@ -1,0 +1,64 @@
+.buttons {
+    background: #111827;
+    display: flex;
+    gap: 19px;
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+}
+
+.buttons button {
+    color: #D1D5DB;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #374151;
+        color: white;
+        box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+    }
+}
+
+.buttons button span {
+    background: #111827;
+    color: white;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.15);
+    top: -80px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+    transform: translateY(5px);
+}
+
+.buttons button:hover span {
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.buttons button:nth-child(3) {
+    background: blue;
+    color: white;
+    border-radius: 50%;
+}
+
+.buttons button:nth-child(3):hover {
+    background: mediumblue;
+}
+
+.buttons button i {
+    font-size: 25px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <style>
+        body {
+            background: url("./images/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+    <!-- Navbar -->
+    <nav>
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html" class="logo">
+                <img src="./images/logo.jpg" alt="logo">
+                <span>David Guetta</span>
+            </a>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <!-- Links -->
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/button.html" target="_blank">Buttons</a></li>
+                <li><a href="./pages/card.html" target="_blank">Cards</a></li>
+                <li><a href="./pages/slider.html" target="_blank">Slider</a></li>
+                <li><a href="mailto:artyom.agadzhanyan421@gmail.com">Contact</a></li>
+            </ul>
+
+            <!-- Socials -->
+            <div class="socials">
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-behance'></i></a>
+            </div>
+        </div>
+
+        <!-- Toggle -->
+        <i class='bx bx-grid-alt' id="toggle" onclick="dropDown()"></i>
+    </nav>
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="dropDown()"></div>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
